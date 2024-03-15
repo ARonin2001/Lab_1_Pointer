@@ -1,0 +1,17 @@
+Apple, 1
+Apple, 3
+Apple, 4
+Apple, 7
+Steam, 1
+Steam, 2
+Steam, 3
+Steam, 4
+Steam, 5
+Steam, 6
+Steam, 7
+Steam, 8
+Steam, 9
+Steam, 10
+Steam, 11
+Japan, 8
+Japan, 99
