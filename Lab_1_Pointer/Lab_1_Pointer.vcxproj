@@ -140,12 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Lab_1_Pointer.cpp" />
-    <ClCompile Include="MyStr.cpp" />
     <ClCompile Include="Pointer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MyStr.h" />
     <ClInclude Include="Pointer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pointers.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
