@@ -27,6 +27,9 @@ public:
 
     int deletePointer(string word);
 
+    static string to_lowercase(string str);
+    static string* splite_line(string line);
+
 };
 
 #endif
