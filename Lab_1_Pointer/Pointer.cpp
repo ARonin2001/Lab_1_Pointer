@@ -5,6 +5,7 @@
 #include <fstream>
 #include <string>
 #include <cctype>
+#include <utility>
 
 #include "Pointer.h"
 
@@ -61,10 +62,10 @@ void Pointer::setPointersByFile(string filePath) {
         string line;
 
         while (getline(file, line)) {
-            string* splitedLine = splite_line(line);
+            pair<string, string> splitedLine = splite_line(line);
 
-            string word = splitedLine[0];
-            int page = stoi(splitedLine[1]);
+            string word = splitedLine.first;
+            int page = stoi(splitedLine.second);
 
 
             if (pointer.count(word)) {
@@ -127,7 +128,8 @@ string Pointer::to_lowercase(string str)
     return toLowerStr;
 }
 
-string* Pointer::splite_line(string line) {
+pair<string, string> Pointer::splite_line(string line) {
+    pair<string, string> splitingLine;
     string first, second;
     bool isComma = false;
 
@@ -147,5 +149,7 @@ string* Pointer::splite_line(string line) {
 
     first = to_lowercase(first);
 
-    return new string[]{ first, second };
+    splitingLine = make_pair(first, second);
+
+    return splitingLine;
 }
